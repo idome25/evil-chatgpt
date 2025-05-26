@@ -14,7 +14,8 @@ export default function Chat() {
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
   async function fetchLie(question: string): Promise<string> {
-    const res = await fetch('http://localhost:3001/api/lie', {
+    const apiUrl = import.meta.env.PROD ? '/api/lie' : 'http://localhost:3001/api/lie';
+    const res = await fetch(apiUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ question }),
