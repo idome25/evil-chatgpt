@@ -35,7 +35,7 @@ app.post('/api/lie', async (req, res) => {
         { role: 'user', content: prompt },
       ],
       max_tokens: 500,
-      temperature: 0.95,
+      temperature: 2,
     });
     const lie = completion.choices[0].message.content.trim();
     res.json({ lie });

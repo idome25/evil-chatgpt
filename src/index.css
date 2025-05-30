@@ -91,6 +91,9 @@ textarea {
     padding-left: 0rem;
     padding-right: 0rem;
   }
+  html, body, :root {
+    font-size: 18px;
+  }
 }
 
 .content-container {
