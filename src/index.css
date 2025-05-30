@@ -16,8 +16,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding-left: 6rem;
-  padding-right: 6rem;
 }
 
 a {
@@ -86,4 +84,16 @@ textarea {
   button {
     background-color: #f9f9f9;
   }
+}
+
+@media (max-width: 600px) {
+  .content-container {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}
+
+.content-container {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
